@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Zapewnienie reagowania zawartości strony na różne wielkości ekranu-->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <title>Bootstrap Templates</title>
+
+    <!-- Skompresowaney plik Bootstrap -->
+    <link rel="stylesheet" href="bootstrap/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+
+    <!-- Nasze style - po bootstrap!!! -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+    <!-- Treść strony  -->
+
+    <!-- navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+                <a class="navbar-brand" href="#">Brand</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+
+
+    <!-- Kontenery -->
+    <div class="container">
+        <!-- .row>.col-lg-6*2 -->
+        <div class="row">
+            <div class="col-lg-6"></div>
+            <div class="col-lg-6"></div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id earum dignissimos, cupiditate, pariatur harum ratione velit hic, odit nobis ipsam possimus maxime. Numquam, minus enim aperiam dolorum ad doloribus harum?</p>
+        <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id earum dignissimos, cupiditate, pariatur harum ratione velit hic, odit nobis ipsam possimus maxime. Numquam, minus enim aperiam dolorum ad doloribus harum?</p>
+        <p class="text-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id earum dignissimos, cupiditate, pariatur harum ratione velit hic, odit nobis ipsam possimus maxime. Numquam, minus enim aperiam dolorum ad doloribus harum?</p>
+        <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id earum dignissimos, cupiditate, pariatur harum ratione velit hic, odit nobis ipsam possimus maxime. Numquam, minus enim aperiam dolorum ad doloribus harum?</p>
+        <p class="text-nowrap">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id earum dignissimos, cupiditate, pariatur harum ratione velit hic, odit nobis ipsam possimus maxime. Numquam, minus enim aperiam dolorum ad doloribus harum?</p>
+
+    </div>
+
+    <!-- Transformacje tekstowe za pomocą klasy bootstrap -->
+    <div id="text-transform">
+        <p class="text-uppercase">testowy, testowy, testowy</p>
+        <p class="text-lowercase">Testowy, Testowy, Testowy</p>
+        <p class="text-capitalize">testowy, testowy, testowy</p>
+    </div>
+
+
+    <!-- Bootstrap carousele + zapis w pliku main.js -->
+   <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+ 
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="https://www.lamborghini.com/en-en/sites/en-en/files/DAM/it/models_gateway/blocks/special.png" alt="...">
+      <div class="carousel-caption">
+      	<h3>Lambo 1</h3>
+      </div>
+    </div>
+    <div class="item">
+      <img src="https://www.lamborghini.com/en-en/sites/en-en/files/DAM/it/models_gateway/blocks/huracan.png" alt="...">
+      <div class="carousel-caption">
+      	<h3>Lambo 2</h3>
+      </div>
+    </div>
+    <div class="item">
+      <img src="https://squadracorse.lamborghini.com/sites/lamborghinisc/files/dam/__release/Academy%20-%20Winter/Gallery/best-of-WA-Livigno-2016-0107.jpg" alt="...">
+      <div class="carousel-caption">
+      	<h3>Lambo 3</h3>
+      </div>
+    </div>
+  </div>
+ 
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div> <!-- Carousel -->
+
+    <!-- jQuery (wymagany dla Bootstrap javaScript) -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+
+    <!-- Skompresowany plik Bootstrap JavaScript dodany lokalnie -->
+    <script src="bootstrap/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    
+    <script src="js/main.js"></script>
+</body>
+
+</html>
